@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Advanced Search</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Buttons arriba -->
+  <div class="container">
+    <form action="index.html">
+      <button class="button">Home</button>
+    </form>
+    <form action="image.html">
+      <button class="button">Google Images</button>
+    </form>
+  </div>
+
+  <!-- Contenido -->
+  <div class="advanced-search">
+    <form action="https://www.google.com/search" method="GET" target="_blank">
+
+      <!-- Find pages with... -->
+      <div class="row">
+        <div class="left-col"><label for="as_q">all these words:</label></div>
+        <div class="right-col">
+          <input type="text" id="as_q" name="as_q">
+          <span class="hint">Type the important words: <b>tri-colour rat terrier</b></span>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="left-col"><label for="as_epq">this exact word or phrase:</label></div>
+        <div class="right-col">
+          <input type="text" id="as_epq" name="as_epq">
+          <span class="hint">Put exact words in quotes: <b>"rat terrier"</b></span>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="left-col"><label for="as_oq">any of these words:</label></div>
+        <div class="right-col">
+          <input type="text" id="as_oq" name="as_oq">
+          <span class="hint">Type <b>OR</b> between all the words: <b>miniature OR standard</b></span>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="left-col"><label for="as_eq">none of these words:</label></div>
+        <div class="right-col">
+          <input type="text" id="as_eq" name="as_eq">
+          <span class="hint">Put a minus sign just before words: <b>-rodent</b></span>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="left-col"><label for="as_nlo">numbers ranging from:</label></div>
+        <div class="right-col" style="display: flex;">
+          <input type="text" id="as_nlo" name="as_nlo">
+          <span class="to">to</span>
+          <input type="text" id="as_nhi" name="as_nhi">
+          <span class="hint">Put two full stops between numbers: <b>2010..2011</b></span>
+        </div>
+      </div>
+
+      <div class="separator"></div>
+
+      <!-- Then narrow your results by... -->
+      <div class="row">
+        <div class="left-col"><label for="lr">language:</label></div>
+        <div class="right-col">
+          <select name="lr" id="lr">
+            <option value="">any language</option>
+            <option value="lang_en">English</option>
+            <option value="lang_es">Spanish</option>
+          </select>
+          <span class="hint">Find pages in the language you select.</span>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="left-col"><label for="cr">region:</label></div>
+        <div class="right-col">
+          <select name="cr" id="cr">
+            <option value="">any region</option>
+            <option value="countryVE">Venezuela</option>
+            <option value="countryUS">United States</option>
+          </select>
+          <span class="hint">Find pages published in a particular region.</span>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="left-col"><label for="as_qdr">last update:</label></div>
+        <div class="right-col">
+          <select name="as_qdr" id="as_qdr">
+            <option value="">anytime</option>
+            <option value="d">past day</option>
+            <option value="w">past week</option>
+            <option value="m">past month</option>
+            <option value="y">past year</option>
+          </select>
+          <span class="hint">Find pages updated within the time you specify.</span>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="left-col"><label for="as_sitesearch">site or domain:</label></div>
+        <div class="right-col">
+          <input type="text" id="as_sitesearch" name="as_sitesearch">
+          <span class="hint">Limit results to a site like <b>wikipedia.org</b>.</span>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="left-col"><label for="as_occt">terms appearing:</label></div>
+        <div class="right-col">
+          <select name="as_occt" id="as_occt">
+            <option value="any">anywhere in the page</option>
+            <option value="title">in the title of the page</option>
+            <option value="url">in the URL</option>
+            <option value="links">in links to the page</option>
+          </select>
+          <span class="hint">Search for terms in specific places of the page.</span>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="left-col"><label for="as_filetype">file type:</label></div>
+        <div class="right-col">
+          <select name="as_filetype" id="as_filetype">
+            <option value="">any format</option>
+            <option value="pdf">PDF</option>
+            <option value="doc">DOC</option>
+            <option value="xls">XLS</option>
+          </select>
+          <span class="hint">Find pages in the format that you prefer.</span>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="left-col"><label for="as_rights">usage rights:</label></div>
+        <div class="right-col">
+          <select name="as_rights" id="as_rights">
+            <option value="">not filtered by licence</option>
+            <option value="cc_publicdomain">public domain</option>
+            <option value="cc_attribute">free to use with attribution</option>
+          </select>
+          <span class="hint">Find pages you are free to use yourself.</span>
+        </div>
+      </div>
+
+      <div class="submit-btn">
+        <button type="submit" class="button">Advanced Search</button>
+      </div>
+    </form>
+  </div>
+
+</body>
+</html>
